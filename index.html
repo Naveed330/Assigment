@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Week 15</title>
+</head>
+<body>
+    <h1>JavaScript Assignment</h1>
+    <h1>Chapter 1-34</h1>
+    <h2>Submitted to Sir Naveed Sarwar</h2>
+    <h3>Submitted by Naveed Aslam</h3>
+</body>
+<script>
+// Conditional Statements
+// Question # 1:
+// let num1 = parseInt(prompt('Enter First Number'));
+// let num2 = parseInt(prompt('Enter Second Number'));
+// if (num1 > num2){
+//     console.log('Number1 is greater Than number2');
+// }else if (num2 > num1){
+//     console.log('Number2 is greater Than number1');
+// }else{
+//     console.log('User not Enter a Number')
+// }
+
+// Question # 2:
+
+// let num1 = parseInt(prompt('Enter First Number'));
+// let num2 = parseInt(prompt('Enter Second Number'));
+// let num3 = parseInt(prompt('Enter Third Number'));
+// if (num1 > num2 && num1 > num3){
+//     console.log('Number1 is greater Than number2 && number3');
+// }else if (num2 > num1 && num2>num3){
+//     console.log('Number2 is greater Than number1 && number2');
+// }else if (num3>num1 && num3>num2){
+//     console.log('Number3 is greater Than number1 && number2');
+// }else{
+//     console.log('User Not Enter a Number')
+// }
+
+// Question # 3:
+
+// let Number = parseInt(prompt('Enter Number'));
+// if(Number > 0){
+//     console.log('Number is Positive')
+// }else if (Number===0){
+//     console.log('Number is Zero')
+// }else{
+//     console.log('Number is Negative');
+// }
+
+// Question # 4:
+
+// let Number = parseInt(prompt('Enter a Number'));
+// if (Number%5===0){
+//     console.log('Number is Divisible by 5');
+// }else if (Number%11===0){
+//     console.log('Number is Divisible by 11');
+// }else {
+//     console.log('Number is Not Divisible by 5 && 11')
+// }
+
+// Question # 5:
+
+// let Number = parseInt(prompt('Enter a Number'));
+// if (Number%2===0){
+//     console.log('Number Is Even');
+// }else{
+//     console.log('Number is Odd');
+// }
+
+// Question # 6:
+
+// let Year = parseInt(prompt('Enter Year'));
+// if (Year%4==0) {
+//     console.log('Year is Leap Year');
+// }else if (Year%100){
+//     console.log('Year is not a Leap Year');
+// };
+
+// Question # 7:
+
+// let alphabhet = prompt('Enter Any Character')
+
+// if ((alphabhet.length===1) && alphabhet.match(/^[A-Za-z]+$/))  {
+//     console.log('Character is Alphabhet');
+// }else{
+//     console.log('Sorry! You Enter a Digit');
+// }
+
+// Question # 8:
+
+// let char =prompt('Enter Your Character');
+// if (char === 'a' || char === 'A' ||char === 'e'|| char === 'E'|| char === 'i'|| char === 'I'|| char === 'o'|| char === 'O'|| char === 'U'|| char === 'u' ){
+//     console.log('Character is Vowel');
+// }else{
+//     console.log('Charcter is Consonent');
+// }
+
+// Question # 9:
+
+// let input = prompt('Enter');
+// let alphabat = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+// let digit = ['0', '1','2','3','4','5','6','7','8','9'];
+// let specialChar = ["+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":",];
+
+// if (alphabat.includes(input)){
+//     console.log('Character is alphabat');
+// }else if (digit.includes(input)){
+//     console.log('Character is Digit');
+// }else{
+//     console.log('character is specialchar');
+// }
+
+// String Handler:
+
+// Question 1:
+
+// let string = prompt('Enter String');
+// let a = string.length;
+// console.log(a);
+
+// Question 2:
+
+// let string1 = 'I love Pakistan';
+// console.log('string1', string1);
+// console.log('After Convert' , string1.replace('I love Pakistan' , 'Pakistan is very Beautiful City'))
+
+// Question 3:
+
+// let String1 = prompt('Enter First String');
+// let String2 = prompt('Enter Second String');
+
+// let concatString = String1 + " " + String2;
+// console.log('concatString', concatString);
+
+// Question 4;
+
+// let String1 = prompt('Enter First String');
+// let String2 = prompt('Enter Second String');
+
+// let compareString =  String1.localeCompare(String2);
+// console.log('CompareString' , compareString);
+
+// Question 5;
+
+// let Str = prompt('Enter your String');
+// let a = Str.toLowerCase();
+// console.log(a);
+
+// Question 6:
+
+// let Str = prompt('Enter your String');
+// let a = Str.toUpperCase();
+// console.log(a);
+
+// Question 7:
+    // let string = prompt('Enter String');
+    // let alphabat1 = 'a-z]+$/';
+    // let alphabat2 = 'A-Z]+$/';
+    // let alphabat3 = '';
+
+    // for (let i = 0; i <=string.length-1; i++){
+    //     if(alphabat1.includes(string[i])){
+    //     alphabat3 += string[i].toUpperCase()
+    // }else {
+    //     // alphabat2.includes(string[i])
+    //     alphabat3 += string[i].toLowerCase();
+    // }
+    // console.log(alphabat3);
+
+    // }
+
+    // Question 8;
+
+    // Question 9:
+
+//     let Count = prompt('Enter string');
+//     var Vowel = ['a', 'A' , 'e', 'E' ,'i', 'I','o', 'O' ,'u', 'U'];
+//     let voweltotal = '';
+//     let consonantTotal = '';
+//     for (let i = 0; i <Count.length; i++){
+//         if (Vowel.includes(Count[i])){
+//         voweltotal++;
+//     }else {
+//         consonantTotal++;
+//     }
+// }
+// console.log('voweltotal' , voweltotal , "consonantTotal" , consonantTotal);
+
+// Question 10;
+
+// let character = prompt('Enter a string');
+// var collection = character.split(' ');
+// console.log('Total Words' , collection.length , collection);
+
+// // Question 11:
+
+// let string = prompt('Enter a string');
+// let reverseStr = string.split('').reverse().join("");
+// console.log(reverseStr);
+
+// Question 12 :
+
+// let string = prompt('Enter a string');
+// let reverseStr = string.split('').reverse().join("");
+// if (string=== reverseStr){
+//     console.log('word is Ok' , reverseStr);
+// }else{
+//     console.log('word is not Ok' , reverseStr);
+// }
+
+// Question 13 :
+// let firstOne = prompt('Enter String');
+// let a = firstOne.split(' ');
+// console.log(a);
+// for (let i = 0; i< a.length;i++){
+//     a[i] = a[i].split('').reverse().join("");
+// }
+// console.log(a.join(" "));
+
+// Question 14 :
+
+// let string = prompt('enter a string')
+// let newString = string[0];
+// console.log(newString);
+
+// Question 15:
+
+// let string = prompt('enter a string')
+// let newString = string[string.length-1];
+// console.log(newString)
+
+// Array Question
+
+//1-Write a js program to read and print elements of array.
+
+// const { max } = require("mathjs");
+
+// let array = [1,2,3,'IT','Program','Training'];
+// for (let i = 0; i<array.length;i++){
+//     console.log((i) + ": " + array[i]);
+//}
+
+//2-Write a js program to print all negative elements in an array.
+
+// let array = [4, -5, 0, 2, -67, 8, 10, -34];
+// let newArray = [];
+// for (let i = 0; i<array.length;i++){
+
+//     if (array[i] < 0){
+//         newArray.push(array[i])
+//     }
+// }
+// console.log(newArray);
+
+//3-Write a js program to find sum of all array elements.
+
+// var array = [1, 20, 10, 18, 7];
+    
+// var sum = array.reduce(function(a, b){
+//     return a + b;
+// }, 0);
+
+// console.log(sum);
+
+//4- Write a js program to find maximum and minimum element in an array.
+
+// let array = [1,20,30,6,7,8];
+// console.log (Math.max(...array));
+// console.log(Math.min(...array));
+
+// Question 5:
+
+// let array = [20,12,10,45,30,100];
+
+// let maxNumber = Math.max.apply(null, array);
+// array.splice(array.indexOf(maxNumber),1);
+// console.log(Math.max.apply(null, array));
+
+// Question 6:
+
+// let array = [1,2,3,4,5,6,7,8,8,9,10];
+// let even = [];
+// let odd = [];
+// for (let i =0; i <array.length;i++){
+//     if (array[i]%2===0 ){
+//         even.push(array[i]);
+//     }else{
+//         odd.push(array[i])
+//     }
+// }
+// console.log('Even Number' ,even, 'Odd Number', odd) ;
+
+//Question 7:
+
+// let array = [4, -5, 0, 2, -67, 8, 10, -34];
+// let count=[];
+// for (let i = 0; i<array.length;i++){
+
+//     if (array[i] < 0){
+//        count.push(array.length);
+//     }
+// }
+// console.log(count.length);
+
+//Question 8:
+
+// let array = [1,2,3,4,5,6,7,8];
+// let newArray = [...array]
+// console.log(newArray);
+
+//Question 9:
+
+// let array = [1,2,3,4,5,6,7];
+// let newArray = array.push(9);
+// console.log(array);
+
+//Question 10:
+
+// let array = [1,2,3,4,5,6,7,8,9,10];
+// let newArray = array.splice(3,4)
+// console.log(array);
+
+// For LOOP
+
+// for (let i=0; i<=999; i++){
+//     console.log(i);
+// }
+
+//Question 2:
+// for (let j = 40 ; j>0; j--){
+//     console.log(j);
+// }
+
+// Question 3 :
+// for (let i = 'A'; i < 'Z'; i++){
+//     console.log(i);
+// }
+
+//Question 4:
+
+// for (let i = 0; i<=100;i++){
+//     if (i%2==0){
+//         console.log('Number is Even' , i);
+//     }
+// }
+
+//Question 5:
+
+// for (let i = 0; i<=100;i++){
+//        if (i%2!==0){
+//              console.log('Number is Even' , i);
+//          }
+//  }
+
+// Math Operations
+
+//1-Write a js program to round the number, without using the math.round method
+
+// let operation =prompt('Enter any Number' , '2.8');
+// console.log(operation);
+// let a = operation.indexOf('.');
+// let b = parseInt(operation[a+1]);
+// let newVar = parseInt(operation)
+// if (b>5){
+//     newVar++;
+// }
+// console.log(newVar);
+
+// Question 2:
+// let num = parseInt(prompt('Enter a Number' , '2.34'));
+// num++;
+// console.log(num);
+
+//Question 3:
+// let num = parseInt(prompt('Enter a Number' , '2.34'));
+// num--;
+// console.log(num);
+
+
+
+</script>
+</html>
